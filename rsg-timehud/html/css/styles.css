@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/western');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Western', sans-serif !important;
+}
+
+#logo {
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  z-index: 999;
+}
+
+#box_bg {
+  position: absolute;
+  top: 18px;
+  right: 2px;
+  z-index: 999;
+}
+
+#logo img {
+  opacity: 1;
+  width: 50%;
+  height: 50%;
+}
+
+#idplayerBox {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  z-index: 999;
+  padding: 9px 10px;
+  border-radius: 5px;
+  background-image: url("img/box_bg.png");
+  min-width: 80px;
+}
+
+#idplayer {
+  display: flex;
+  align-items: center;
+}
+
+#idplayer i {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+#playerID {
+  margin: 0px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-family: 'Western', sans-serif !important;
+}
+
+#TimeBox {
+  position: absolute;
+  right: 85px;
+  top: 4px;
+  z-index: 999;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: url("img/box_bg.png");
+}
+
+#Time {
+  display: flex;
+  align-items: center;
+}
+
+#Time i {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+#clock {
+  margin: 0px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  font-family: 'Western', sans-serif !important;
+}
