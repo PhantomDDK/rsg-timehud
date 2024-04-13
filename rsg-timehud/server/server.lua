@@ -10,16 +10,13 @@ local function versionCheckPrint(_type, log)
 end
 
 local function CheckVersion()
-    PerformHttpRequest('https://raw.githubusercontent.com/Rexshack-RedM/rsg-target/main/version.txt', function(err, text, headers)
+    PerformHttpRequest('https://raw.githubusercontent.com/PhantomDDK/rsg-timehud/main/version.txt', function(err, text, headers)
         local currentVersion = GetResourceMetadata(GetCurrentResourceName(), 'version')
 
         if not text then 
             versionCheckPrint('error', 'Currently unable to run a version check.')
             return 
         end
-
-        --versionCheckPrint('success', ('Current Version: %s'):format(currentVersion))
-        --versionCheckPrint('success', ('Latest Version: %s'):format(text))
         
         if text == currentVersion then
             versionCheckPrint('success', 'You are running the latest version.')
